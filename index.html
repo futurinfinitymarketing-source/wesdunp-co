@@ -1,423 +1,724 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-619150448&amp;cx=c&amp;gtm=4e63r2"></script>
-    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-X9F1638DYQ&amp;cx=c&amp;gtm=4e63r2"></script>
-    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T9VR8PF"></script>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T9VR8PF');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="http://ads.tanew.com.tw/wesdunpco/images/favicon.png?v=20200629">
     <title>威斯盾除蟲企業有限公司</title>
-    <link rel="stylesheet" type="text/css" media="all" href="http://ads.tanew.com.tw/wesdunpco/css/style.css?v=20201204">
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: "Microsoft JhengHei", "微軟正黑體", "PingFang TC", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    color: #444;
+    background: #1a1a1a;
+    overflow-x: hidden;
+    line-height: 1.8;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+ol, ul { padding-left: 2em; }
+
+/* ===== PRELOADER ===== */
+#preloader {
+    position: fixed; inset: 0; z-index: 9999;
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+}
+.status { display: flex; gap: 10px; }
+.status div {
+    width: 16px; height: 16px; border-radius: 50%;
+    background: #5a9c38;
+    animation: bounce 1s infinite ease-in-out;
+}
+.status .circle2 { animation-delay: .16s; }
+.status .circle3 { animation-delay: .32s; }
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); opacity: .4; }
+    40% { transform: scale(1);   opacity: 1; }
+}
+
+/* ===== MODAL ===== */
+.modal-header { border-bottom: 1px solid #e5e5e5; padding: 15px 20px; }
+.modal-header .modal-title { font-size: 15px; font-weight: bold; color: #333; }
+.modal-header .close { font-size: 26px; line-height: 1; opacity: .6; margin-top: -2px; }
+.modal-body { padding: 0; }
+.modal-dialog { margin: 60px auto; max-width: 620px; }
+@media(max-width:640px){ .modal-dialog { margin: 30px 12px; } }
+
+/* ===== FULL-PAGE WRAPPER ===== */
+#page { position: relative; min-height: 100vh; }
+
+/* ===== FULL BG IMAGE ===== */
+#bg {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+#bg.bgheight { width: auto; height: 100vh; left: 50%; transform: translateX(-50%); }
+#bg.bgwidth  { width: 100%; height: auto; top: 50%; transform: translateY(-50%); }
+
+/* dark overlay on bg */
+#header-bg {
+    position: fixed; inset: 0; z-index: 1;
+    background: rgba(0,0,0,.55);
+    pointer-events: none;
+}
+
+/* ===== PAGE VIEW (above bg) ===== */
+#page-view {
+    position: relative; z-index: 2;
+}
+
+/* ===== HEADER / BRANDING ===== */
+#branding {
+    background: transparent;
+    padding: 18px 0 14px;
+}
+#branding .logo { display: flex; align-items: center; }
+#branding .site-title { margin: 0; }
+#branding .site-title img { height: 60px; width: auto; }
+
+.share-items {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; align-items: center; justify-content: flex-end;
+    height: 100%; gap: 6px; padding-top: 10px;
+}
+.share-items li a {
+    display: flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 50%;
+    font-size: 16px; color: #fff;
+    border: 1px solid rgba(255,255,255,.5);
+    transition: background .2s, border-color .2s;
+}
+.share-item-icon-facebook a { background: #3b5998; border-color: #3b5998; }
+.share-item-icon-facebook a:hover { background: #2d4373; }
+
+/* ===== MAIN VISUAL (hero) ===== */
+.main-visual {
+    min-height: 380px;
+    display: flex; align-items: center;
+    padding: 60px 0 70px;
+}
+.main-text {
+    text-align: center;
+    color: #fff;
+}
+.main-text h1 {
+    font-size: 16px; font-weight: normal;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+.main-text h1 span {
+    display: inline-block;
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgba(255,255,255,.4);
+    padding: 6px 22px;
+    font-size: 17px;
+}
+.main-text p {
+    font-size: 32px; font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.6);
+    line-height: 1.4;
+}
+.main-text p span { display: inline-block; }
+.main-text a {
+    display: inline-block;
+    margin: 0 6px;
+    padding: 10px 28px;
+    font-size: 15px; font-weight: bold;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    transition: background .2s, color .2s;
+}
+.main-text a#event {
+    background: #e8a000; color: #fff;
+    border: 2px solid #e8a000;
+}
+.main-text a#event:hover { background: #c98800; border-color: #c98800; }
+.main-text a.btn-phone {
+    background: transparent; color: #fff;
+    border: 2px solid rgba(255,255,255,.8);
+}
+.main-text a.btn-phone:hover { background: rgba(255,255,255,.15); }
+.main-text .fa { margin-left: 6px; }
+
+/* ===== PAGE CONTENT ===== */
+.page-content {
+    background: #fff;
+    padding-bottom: 0;
+}
+.page-content .container { padding-bottom: 0; }
+
+/* ===== SECTION ENTRY HEADER ===== */
+.entry-header {
+    background: #5a9c38;
+    margin-bottom: 28px;
+}
+.entry-title {
+    color: #fff !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 14px 10px !important;
+    margin: 0 !important;
+}
+
+/* ===== SERVICES SECTION ===== */
+.main-event { padding: 36px 0 10px; }
+.margin-bottom30 { margin-bottom: 30px; }
+
+.list-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: box-shadow .2s, transform .2s;
+    overflow: hidden;
+}
+.list-item:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,.14);
+    transform: translateY(-3px);
+}
+.list-item .link { display: block; color: inherit; }
+.list-item-img img { width: 100%; height: 160px; object-fit: cover; display: block; }
+.list-item-text {
+    padding: 12px 14px 14px;
+    text-align: center;
+    background: #fff;
+}
+.list-item-text h5 {
+    font-size: 17px; font-weight: bold;
+    color: #333; margin: 0 0 5px;
+}
+.list-item-intro1 {
+    display: inline-block;
+    background: #5a9c38; color: #fff;
+    font-size: 12px; padding: 2px 14px;
+    border-radius: 2px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.event-info { padding: 0 0 10px; }
+.event-info .event-content { padding: 0 0 10px; }
+
+.item {
+    padding: 20px 0 16px;
+    border-bottom: 1px solid #ebebeb;
+}
+.item:last-child { border-bottom: none; }
+.item > p { font-size: 15px; margin-bottom: 12px; color: #333; }
+.item > p b { font-weight: bold; }
+.item ol { font-size: 14px; color: #555; line-height: 2; margin-bottom: 10px; }
+.item ol li { margin-bottom: 2px; }
+.highlight { color: #e07b00; font-weight: bold; }
+
+/* award / license images */
+.award {
+    display: flex; flex-wrap: wrap;
+    margin: 16px -8px 4px;
+}
+.award .image_box {
+    padding: 8px;
+}
+.award .image_box .image {
+    width: 100%; height: auto;
+    border: 1px solid #ddd;
+    transition: opacity .2s;
+    cursor: zoom-in;
+}
+.award .image_box .image:hover { opacity: .82; }
+
+/* example photo rows */
+.example {
+    display: flex; flex-wrap: wrap;
+    margin: 12px -8px 4px;
+}
+.example .image_box { padding: 8px; }
+.example .image_box .image {
+    width: 100%; height: auto;
+    border: 1px solid #ddd;
+    transition: opacity .2s;
+    cursor: zoom-in;
+}
+.example .image_box .image:hover { opacity: .82; }
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #2c2c2c;
+    padding: 22px 0;
+    margin-top: 30px;
+    text-align: center;
+}
+.copyright {
+    color: #aaa; font-size: 13px; margin-bottom: 6px;
+}
+.number .text { color: #ccc; font-size: 14px; margin: 0; }
+.number .link { color: #f0b400; }
+.number .link:hover { text-decoration: underline; }
+
+/* ===== BACK TO TOP ===== */
+#back-top {
+    position: fixed; bottom: 22px; right: 18px;
+    z-index: 800;
+    display: none;
+}
+#back-top a {
+    display: flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px;
+    background: #5a9c38; color: #fff;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.3);
+    transition: background .2s, transform .15s;
+}
+#back-top a:hover { background: #468030; transform: scale(1.08); }
+
+/* ===== WOW animations (lightweight inline) ===== */
+.fadeInUp  { animation: fadeInUp  .7s ease both; }
+.zoomIn    { animation: zoomIn    .5s ease both; }
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(.7); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* ===== RWD ===== */
+@media (max-width: 767px) {
+    .main-text p { font-size: 22px; letter-spacing: 1px; }
+    .main-text h1 span { font-size: 14px; }
+    .share-items { justify-content: flex-start; padding-top: 6px; }
+    #branding .site-title img { height: 46px; }
+}
+
+/* Magnific Popup overrides */
+.mfp-bg { background: #000; opacity: .85; }
+</style>
 </head>
-
 <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9VR8PF"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <div id="preloader" style="display: none;">
-        <div class="status">
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-            <div class="circle3"></div>
-        </div>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="status">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
     </div>
-    
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <h4 class="modal-title" id="modalLabel">如果您有任何疑問，或想反映的意見，歡迎與我們聯繫</h4>
-                </div>
-                <div class="modal-body">
-                    <iframe id="show" src="" width="100%" height="580" frameborder="0"></iframe>
-                </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modalLabel">如果您有任何疑問，或想反映的意見，歡迎與我們聯繫</h4>
+            </div>
+            <div class="modal-body">
+                <iframe id="show" src="" width="100%" height="580" frameborder="0"></iframe>
             </div>
         </div>
     </div>
-    
-    <div id="page" class="page">
-        <img src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif" id="bg" alt="" class="bgheight">
-        <div id="header-bg"></div>
-        <div id="page-view">
-            <header id="branding" class="site-header" role="banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="logo col-md-5 col-sm-7">
-                            <h1 class="site-title"><a href="index.html" title="the lounge" rel="home">
-                            <img src="http://ads.tanew.com.tw/wesdunpco/images/logo2.png?v=20201119" alt=""></a></h1>
-                        </div>
-                        <div class="col-md-7 col-sm-5">
-                            <ul class="share-items">
-                                <li class="share-item-icon-facebook"><a target="_blank" title="Facebook" href="https://www.facebook.com/wesdunpco/?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <div class="main-visual">
-                <div class="container">
-                    <div class="main-text">
-                        <h1>
-                             <span>現場專業免費場勘</span>
+</div>
+
+<div id="page" class="page">
+
+    <!-- Full background image -->
+    <img src="http://ads.tanew.com.tw/wesdunpco/images/bg.jpg" id="bg" alt="" class="bgheight">
+    <div id="header-bg"></div>
+
+    <div id="page-view">
+
+        <!-- ── HEADER ── -->
+        <header id="branding" class="site-header" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="logo col-md-5 col-sm-7">
+                        <h1 class="site-title">
+                            <a href="#top" title="威斯盾除蟲" rel="home">
+                                <img src="http://ads.tanew.com.tw/wesdunpco/images/logo2.png?v=20201119" alt="威斯盾除蟲企業有限公司">
+                            </a>
                         </h1>
-                        <p>
-                            <span>蟲蟲遇到威斯盾 &nbsp; 立即消滅無所遁</span>
-                        </p>
-                        <a href="#" data-toggle="modal" data-target="#modal" id="event">
-                            立即預約<i class="fa fa-arrow-circle-right fa-fw"></i>
-                        </a>
-                        <a class="btn-phone" href="tel:0225621241">
-                            諮詢專線<i class="fa fa-phone fa-fw"></i>
-                        </a>
+                    </div>
+                    <div class="col-md-7 col-sm-5">
+                        <ul class="share-items">
+                            <li class="share-item-icon-facebook">
+                                <a target="_blank" title="Facebook" href="https://www.facebook.com/wesdunpco/?ref=br_rs">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            
-            <div class="page-content">
-                <div class="container">
-                    <div class="main-event margin-bottom30 wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="entry-header">
-                            <h1 class="entry-title">服務項目</h1>
-                        </div>
-                        <div class="event-content">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6 wow  zoomIn" style="visibility: visible; animation-name: zoomIn;">
-                                    <div class="list-item">
-                                        <a class="link" href="#serve1">
-                                            <div class="list-item-img">
-                                                <img src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="list-item-text" style="height: 58px;">
-                                                <h5>白蟻防治</h5>
-                                                <div class="list-item-intro1">防疫準則</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 wow  zoomIn" style="visibility: visible; animation-name: zoomIn;">
-                                    <div class="list-item">
-                                        <a class="link" href="#serve2">
-                                            <div class="list-item-img">
-                                                <img src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="list-item-text" style="height: 58px;">
-                                                <h5>鼠害防治</h5>
-                                                <div class="list-item-intro1">防疫準則</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 wow  zoomIn" style="visibility: visible; animation-name: zoomIn;">
-                                    <div class="list-item">
-                                        <a class="link" href="#serve3">
-                                            <div class="list-item-img">
-                                                <img src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="list-item-text" style="height: 58px;">
-                                                <h5>其他病蟲防治</h5>
-                                                <div class="list-item-intro1">防疫準則</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 wow  zoomIn" style="visibility: visible; animation-name: zoomIn;">
-                                    <div class="list-item">
-                                        <a class="link" href="#serve4">
-                                            <div class="list-item-img">
-                                                <img src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="list-item-text" style="height: 58px;">
-                                                <h5>除甲醛</h5>
-                                                <div class="list-item-intro1">防疫準則</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="event-info wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="entry-header">
-                            <h1 class="entry-title">關於威斯盾</h1>
-                        </div>
-                        <div class="event-content">
-                            <div class="item">
-                                <p><b>威斯盾公司簡介</b></p>
-                                <ol>
-                                    <li>【<span class="highlight">威斯盾除蟲企業有限公司</span>】是一個合法及專業的病媒防治公司，現場防治人員及後勤單位皆受過<span class="highlight">蟲,鼠,菌…等有害生物</span>的專業訓練。</li>
-                                    <li>對於客戶的問題點，更秉持著服務至上，盡力於短期之內將客戶所遭遇的蟲,鼠,菌有害生物問題做最有效控管，威斯盾施團隊人員，皆已有<span class="highlight">10</span>年以上相關防治服務經驗，並考取環保署<span class="highlight">專業技術人員執照</span>。</li>
-                                    <li>舉凡各公家機關、公私立學校、辦公室大樓、食品廠房、連鎖餐飲集團、私人住家、餐廳行號….等，皆有豐富的防治經驗，絕對是客戶最佳的選擇。</li>
-                                    <li>為提高防治之成效及有效控管客戶端病媒問題，威斯盾公司有別於坊間消毒公司，針對所配合之客戶，皆有【<span class="highlight">客戶專屬防治交接手冊</span>】，以避免不同防治人員至客戶端病媒問題產生斷層現象。</li>
-                                    <li>為能更有效控管客戶端病媒問題，威斯盾公司將於每<span class="highlight">3-6個月</span>更換所使用之環境用藥，除了能更有效控管病媒問題以外，更能避免因未定期更換防治藥劑而產生抗藥性現象。</li>
-                                </ol>
-                            </div>
-                            <div class="item">
-                                <p><b>威斯盾公司證照說明</b></p>
-                                <ol>
-                                    <li>【<span class="highlight">威斯盾除蟲企業有限公司</span>】公司人員皆受過專業度訓練，並擁有10年以上實務經驗。</li>
-                                    <li>所有防治器材皆為進口器材，與坊間劣質產品差異極大，能將其特性發揮到最大。 </li>
-                                    <li>針對各區蟲害問題，工程人員會依照不同病媒問題使用不同器材及藥劑，以達有效控管。 </li>
-                                    <li>凡公司正職人員，皆會培訓至病媒防治工會受訓，並考取專業證照，增加其專業知識能力。</li>
-                                    <li>【<span class="highlight">每周定期會議</span>】，針對問題客戶提出防改善方案及解決方式並施作紀錄，提升自我能力。</li>
-                                </ol>
-                            </div>
-                            <div class="item">
-                                <p><b>威斯盾藥劑說明</b></p>
-                                <ol>
-                                    <li>威斯盾除蟲所採用之藥劑，均通過台灣【環保署】及國外環保單位安全性測試合格，並均具備<span class="highlight">「用藥許可證」</span>之證號及<span class="highlight">藥劑物質安全資料表</span>(MSDS)。</li>
-                                    <li>採用拜耳、巴斯夫、道禮…等世界知名藥廠，所生產之藥劑為主，藥劑成本雖高，但安全等級最佳。</li>
-                                    <li>藥物毒性比一般食鹽（LD/50 3750ppm）的毒性還低，只對冷血性昆蟲有致命的傷害，哺乳動物若不慎接觸，皆可經由排汗或排尿…等方式代謝掉。</li>
-                                    <li>針對不同的環境及場所使用不同藥劑，避免損毀電器類產品或侵蝕地面及壁面。</li>
-                                    <li>所有環境用藥皆以「水」稀釋，並遵照其使用說明稀釋藥劑，客戶最為放心。</li>
-                                </ol>
-                                <div class="award">
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif?v=20200922">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="item" id="serve1">
-                                <p><b>白蟻 - 針對活動範圍使用特殊機具鑽孔，並搭配高壓灌注器施打藥劑，可有效殲滅白蟻巢穴</b></p>
-                                <div class="example">
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="item" id="serve2">
-                                <p><b>老鼠 - 檢視主要入侵路徑，加強防堵工程，可有效控管鼠害問題！</b></p>
-                                <div class="example">
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="item" id="serve3">
-                                <p><b>病蟲害 - 針對不同蟲害狀況搭配不同藥劑及防治器材，降低蟲害問題</b></p>
-                                <div class="example">
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="item" id="serve4">
-                                <p><b>除甲醛 - 環境中甲醛對健康的傷害深遠且嚴重，切勿輕忽甲醛對寶貴家人的健康安全，威斯盾幫您家庭環境除去甲醛的威脅，讓您住的舒適自在好放心！</b></p>
-                                <div class="example">
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                    <div class="image_box col-md-4 col-sm-4 col-xs-12">
-                                        <a class="link" href="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                            <img class="image" src="https://img.1shop.tw/LGzY6Q3q9NXoGrxRlW2omr5v/DPq15dgL3PqwWo2MlrBbJ2am/original-2.jpg.avif">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="footer wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="copyright">
-                            Copyright © 2020 Wesdunpco All Rights Reserved.
-                        </div>
-                        <div class="number">
-                            <p class="text">諮詢專線：<span><a class="link" href="tel:0225621241">02-2562-1241</a></span>、<span><a class="link" href="tel:0968176258">0968-176-258</a></span></p>
-                        </div>
-                    </div>
+        </header>
+
+        <!-- ── HERO ── -->
+        <div class="main-visual" id="top">
+            <div class="container">
+                <div class="main-text">
+                    <h1><span>現場專業免費場勘</span></h1>
+                    <p><span>蟲蟲遇到威斯盾 &nbsp;&nbsp; 立即消滅無所遁</span></p>
+                    <a href="#" data-toggle="modal" data-target="#modal" id="event">
+                        立即預約<i class="fa fa-arrow-circle-right fa-fw"></i>
+                    </a>
+                    <a class="btn-phone" href="tel:0225621241">
+                        諮詢專線<i class="fa fa-phone fa-fw"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div id="back-top" class="animated zoomIn" style="display: none;">
-        <a href="#top" title="回到頂端"><i class="fa fa-angle-up"></i></a>
-    </div>
 
-    <script type="text/javascript" src="http://ads.tanew.com.tw/wesdunpco/js/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ads.tanew.com.tw/wesdunpco/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://ads.tanew.com.tw/wesdunpco/js/html5.js"></script>
-    <script type="text/javascript" src="http://ads.tanew.com.tw/wesdunpco/js/modernizr.custom.23397.js"></script>
-    <script type="text/javascript" src="http://ads.tanew.com.tw/wesdunpco/js/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="http://ads.tanew.com.tw/wesdunpco/js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="http://ads.tanew.com.tw/wesdunpco/js/wow.min.js"></script>
-    
-    <script>
-        (function(){
-            var init = function(){
-                setPreLoader();
-                setForm();
-                setWow();
-                setMatchHeight();
-                setBackTop();
-                setResizeBG();
-                setAwardmfp();
-                setExamplemfp();
-                setClickServe();
-            };
+        <!-- ── PAGE CONTENT ── -->
+        <div class="page-content">
+            <div class="container">
 
-            var setPreLoader = function(){
-                setTimeout(function() {
-                    $("#status, #preloader").fadeOut();
-                }, 500);
-            };
+                <!-- 服務項目 -->
+                <div class="main-event margin-bottom30 fadeInUp">
+                    <div class="entry-header">
+                        <h1 class="entry-title">服務項目</h1>
+                    </div>
+                    <div class="event-content">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 zoomIn">
+                                <div class="list-item">
+                                    <a class="link" href="#serve1">
+                                        <div class="list-item-img">
+                                            <img src="http://ads.tanew.com.tw/wesdunpco/images/serve1.jpg?v=20200922" alt="白蟻防治" class="img-responsive">
+                                        </div>
+                                        <div class="list-item-text" style="height:58px;">
+                                            <h5>白蟻防治</h5>
+                                            <div class="list-item-intro1">防疫準則</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 zoomIn">
+                                <div class="list-item">
+                                    <a class="link" href="#serve2">
+                                        <div class="list-item-img">
+                                            <img src="http://ads.tanew.com.tw/wesdunpco/images/serve2.jpg?v=20200922" alt="鼠害防治" class="img-responsive">
+                                        </div>
+                                        <div class="list-item-text" style="height:58px;">
+                                            <h5>鼠害防治</h5>
+                                            <div class="list-item-intro1">防疫準則</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 zoomIn">
+                                <div class="list-item">
+                                    <a class="link" href="#serve3">
+                                        <div class="list-item-img">
+                                            <img src="http://ads.tanew.com.tw/wesdunpco/images/serve3.jpg?v=20200924" alt="其他病蟲防治" class="img-responsive">
+                                        </div>
+                                        <div class="list-item-text" style="height:58px;">
+                                            <h5>其他病蟲防治</h5>
+                                            <div class="list-item-intro1">防疫準則</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 zoomIn">
+                                <div class="list-item">
+                                    <a class="link" href="#serve4">
+                                        <div class="list-item-img">
+                                            <img src="http://ads.tanew.com.tw/wesdunpco/images/serve4.jpg?v=20200924" alt="除甲醛" class="img-responsive">
+                                        </div>
+                                        <div class="list-item-text" style="height:58px;">
+                                            <h5>除甲醛</h5>
+                                            <div class="list-item-intro1">防疫準則</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            var setForm = function(){
-                $("#event").on('click', function(){
-                    // 表單路徑也替換為絕對路徑
-                    $("iframe#show").attr("src", "http://ads.tanew.com.tw/wesdunpco/form.html");
-                });
-            };
+                <!-- 關於威斯盾 -->
+                <div class="event-info fadeInUp">
+                    <div class="entry-header">
+                        <h1 class="entry-title">關於威斯盾</h1>
+                    </div>
+                    <div class="event-content">
 
-            var setWow = function(){
-                new WOW().init();
-            };
+                        <!-- 公司簡介 -->
+                        <div class="item">
+                            <p><b>威斯盾公司簡介</b></p>
+                            <ol>
+                                <li>【<span class="highlight">威斯盾除蟲企業有限公司</span>】是一個合法及專業的病媒防治公司，現場防治人員及後勤單位皆受過<span class="highlight">蟲,鼠,菌…等有害生物</span>的專業訓練。</li>
+                                <li>對於客戶的問題點，更秉持著服務至上，盡力於短期之內將客戶所遭遇的蟲,鼠,菌有害生物問題做最有效控管，威斯盾施團隊人員，皆已有<span class="highlight">10</span>年以上相關防治服務經驗，並考取環保署<span class="highlight">專業技術人員執照</span>。</li>
+                                <li>舉凡各公家機關、公私立學校、辦公室大樓、食品廠房、連鎖餐飲集團、私人住家、餐廳行號….等，皆有豐富的防治經驗，絕對是客戶最佳的選擇。</li>
+                                <li>為提高防治之成效及有效控管客戶端病媒問題，威斯盾公司有別於坊間消毒公司，針對所配合之客戶，皆有【<span class="highlight">客戶專屬防治交接手冊</span>】，以避免不同防治人員至客戶端病媒問題產生斷層現象。</li>
+                                <li>為能更有效控管客戶端病媒問題，威斯盾公司將於每<span class="highlight">3-6個月</span>更換所使用之環境用藥，除了能更有效控管病媒問題以外，更能避免因未定期更換防治藥劑而產生抗藥性現象。</li>
+                            </ol>
+                        </div>
 
-            var setMatchHeight = function(){
-                $(".list-item-text").matchHeight({
-                    byRow: true,
-                    property: 'height',
-                    target: null,
-                    remove: false
-                });
-            };
+                        <!-- 證照說明 -->
+                        <div class="item">
+                            <p><b>威斯盾公司證照說明</b></p>
+                            <ol>
+                                <li>【<span class="highlight">威斯盾除蟲企業有限公司</span>】公司人員皆受過專業度訓練，並擁有10年以上實務經驗。</li>
+                                <li>所有防治器材皆為進口器材，與坊間劣質產品差異極大，能將其特性發揮到最大。</li>
+                                <li>針對各區蟲害問題，工程人員會依照不同病媒問題使用不同器材及藥劑，以達有效控管。</li>
+                                <li>凡公司正職人員，皆會培訓至病媒防治工會受訓，並考取專業證照，增加其專業知識能力。</li>
+                                <li>【<span class="highlight">每周定期會議</span>】，針對問題客戶提出防改善方案及解決方式並施作紀錄，提升自我能力。</li>
+                            </ol>
+                        </div>
 
-            var setBackTop = function(){
-                $(window).on('scroll', function(){
-                    if ($(this).scrollTop() > 100) {
-                        $('#back-top').fadeIn().addClass('animated zoomIn');
-                    } else {
-                        $('#back-top').fadeOut();
-                    }
-                    $('#back-top').off('click');
-                    $('#back-top').on('click', function(){
-                        $('body,html').animate({
-                        scrollTop: 0}, 300);
-                    });
-                }); 
-            };
+                        <!-- 藥劑說明 + 證照圖 -->
+                        <div class="item">
+                            <p><b>威斯盾藥劑說明</b></p>
+                            <ol>
+                                <li>威斯盾除蟲所採用之藥劑，均通過台灣【環保署】及國外環保單位安全性測試合格，並均具備<span class="highlight">「用藥許可證」</span>之證號及<span class="highlight">藥劑物質安全資料表</span>(MSDS)。</li>
+                                <li>採用拜耳、巴斯夫、道禮…等世界知名藥廠，所生產之藥劑為主，藥劑成本雖高，但安全等級最佳。</li>
+                                <li>藥物毒性比一般食鹽（LD/50 3750ppm）的毒性還低，只對冷血性昆蟲有致命的傷害，哺乳動物若不慎接觸，皆可經由排汗或排尿…等方式代謝掉。</li>
+                                <li>針對不同的環境及場所使用不同藥劑，避免損毀電器類產品或侵蝕地面及壁面。</li>
+                                <li>所有環境用藥皆以「水」稀釋，並遵照其使用說明稀釋藥劑，客戶最為放心。</li>
+                            </ol>
+                            <div class="award">
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/license1.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/license1.jpg?v=20200922" alt="證照1">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/license2.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/license2.jpg?v=20200922" alt="證照2">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/license3.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/license3.jpg?v=20200922" alt="證照3">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-            var setResizeBG = function(){
-                var theWindow = $(window),
-                    $bg = $("#bg"),
-                    aspectRatio = $bg.width() / $bg.height();
+                        <!-- 白蟻案例 -->
+                        <div class="item" id="serve1">
+                            <p><b>白蟻 - 針對活動範圍使用特殊機具鑽孔，並搭配高壓灌注器施打藥劑，可有效殲滅白蟻巢穴</b></p>
+                            <div class="example">
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example1_1.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example1_1.jpg?v=20200922" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example1_2.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example1_2.jpg?v=20200922" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example1_3.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example1_3.jpg?v=20200922" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                function resizeBg() {
-                    if ((theWindow.width() / theWindow.height()) < aspectRatio) {
-                        $bg.removeClass().addClass('bgheight');
-                    } else {
-                        $bg.removeClass().addClass('bgwidth');
-                    }
-                }
-                theWindow.resize(resizeBg).trigger("resize");
-            };
+                        <!-- 老鼠案例 -->
+                        <div class="item" id="serve2">
+                            <p><b>老鼠 - 檢視主要入侵路徑，加強防堵工程，可有效控管鼠害問題！</b></p>
+                            <div class="example">
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example2_1.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example2_1.jpg?v=20200922" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example2_2.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example2_2.jpg?v=20200922" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example2_3.jpg?v=20200922">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example2_3.jpg?v=20200922" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-            var setAwardmfp = function(){
-                $('.award .link').magnificPopup({
-                    type: 'image',
-                    mainClass: 'mfp-with-zoom',
-                    zoom: {
-                        enabled: true, 
-                        duration: 300, 
-                        easing: 'ease-in-out'
-                    }
-                });
-            };
+                        <!-- 病蟲害案例 -->
+                        <div class="item" id="serve3">
+                            <p><b>病蟲害 - 針對不同蟲害狀況搭配不同藥劑及防治器材，降低蟲害問題</b></p>
+                            <div class="example">
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example3_1.jpg?v=20200924">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example3_1.jpg?v=20200924" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example3_2.jpg?v=20200924">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example3_2.jpg?v=20200924" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/example3_3.jpg?v=20200924">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/example3_3.jpg?v=20200924" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-            var setExamplemfp = function(){
-                $('.example .link').magnificPopup({
-                    type: 'image',
-                    mainClass: 'mfp-with-zoom',
-                    zoom: {
-                        enabled: true, 
-                        duration: 300, 
-                        easing: 'ease-in-out',
-                        opener: function (openerElement) {
-                            return openerElement.is('img') ? openerElement : openerElement.find('img');
-                        }
-                    }
-                });
-            };
+                        <!-- 除甲醛案例 -->
+                        <div class="item" id="serve4">
+                            <p><b>除甲醛 - 環境中甲醛對健康的傷害深遠且嚴重，切勿輕忽甲醛對寶貴家人的健康安全，威斯盾幫您家庭環境除去甲醛的威脅，讓您住的舒適自在好放心！</b></p>
+                            <div class="example">
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/2121121.jpg?v=20200924">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/2121121.jpg?v=20200924" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/2200048.jpg?v=20200924">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/2200048.jpg?v=20200924" alt="">
+                                    </a>
+                                </div>
+                                <div class="image_box col-md-4 col-sm-4 col-xs-12">
+                                    <a class="link" href="http://ads.tanew.com.tw/wesdunpco/images/2121119.jpg?v=20200924">
+                                        <img class="image" src="http://ads.tanew.com.tw/wesdunpco/images/2121119.jpg?v=20200924" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-            var setClickServe = function(){
-                $('.list-item').on('click', function(){
-                    var link = $($(this).find('a')).attr('href');
-                    var height = $(link).offset().top;
-                    $('body, html').animate({
-                        scrollTop: height
-                    })
-                })
-            };
+                    </div><!-- /event-content -->
+                </div><!-- /event-info -->
 
-            init();
-        })()
-    </script>
+                <!-- Footer -->
+                <div class="footer fadeInUp">
+                    <div class="copyright">
+                        Copyright &copy; 2020 Wesdunpco All Rights Reserved.
+                    </div>
+                    <div class="number">
+                        <p class="text">諮詢專線：<span><a class="link" href="tel:0225621241">02-2562-1241</a></span>、<span><a class="link" href="tel:0968176258">0968-176-258</a></span></p>
+                    </div>
+                </div>
+
+            </div><!-- /container -->
+        </div><!-- /page-content -->
+
+    </div><!-- /page-view -->
+</div><!-- /page -->
+
+<!-- Back to top -->
+<div id="back-top">
+    <a href="#top" title="回到頂端"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+(function($){
+    var init = function(){
+        setPreLoader();
+        setForm();
+        setBackTop();
+        setResizeBG();
+        setAwardmfp();
+        setExamplemfp();
+        setClickServe();
+    };
+
+    var setPreLoader = function(){
+        setTimeout(function(){
+            $('#preloader').fadeOut(400);
+        }, 500);
+    };
+
+    var setForm = function(){
+        $('#event').on('click', function(){
+            $('iframe#show').attr('src', 'http://ads.tanew.com.tw/wesdunpco/form.html');
+        });
+    };
+
+    var setBackTop = function(){
+        $(window).on('scroll', function(){
+            if($(this).scrollTop() > 100){
+                $('#back-top').fadeIn().addClass('animated zoomIn');
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+        $('#back-top').on('click', function(){
+            $('body,html').animate({ scrollTop: 0 }, 300);
+            return false;
+        });
+    };
+
+    var setResizeBG = function(){
+        var theWindow = $(window),
+            $bg = $('#bg'),
+            aspectRatio = $bg.width() / $bg.height();
+
+        function resizeBg(){
+            if((theWindow.width() / theWindow.height()) < aspectRatio){
+                $bg.removeClass().addClass('bgheight');
+            } else {
+                $bg.removeClass().addClass('bgwidth');
+            }
+        }
+        $bg.on('load', function(){
+            aspectRatio = $bg.width() / $bg.height();
+            resizeBg();
+        });
+        theWindow.resize(resizeBg).trigger('resize');
+    };
+
+    var setAwardmfp = function(){
+        $('.award .link').magnificPopup({
+            type: 'image',
+            mainClass: 'mfp-with-zoom',
+            zoom: { enabled: true, duration: 300, easing: 'ease-in-out' }
+        });
+    };
+
+    var setExamplemfp = function(){
+        $('.example .link').magnificPopup({
+            type: 'image',
+            mainClass: 'mfp-with-zoom',
+            zoom: {
+                enabled: true, duration: 300, easing: 'ease-in-out',
+                opener: function(el){ return el.is('img') ? el : el.find('img'); }
+            }
+        });
+    };
+
+    var setClickServe = function(){
+        $('.list-item').on('click', function(){
+            var link = $($(this).find('a')).attr('href');
+            var height = $(link).offset().top;
+            $('body,html').animate({ scrollTop: height }, 400);
+        });
+    };
+
+    $(document).ready(init);
+})(jQuery);
+</script>
+
 </body>
 </html>
